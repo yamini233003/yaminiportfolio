@@ -66,50 +66,50 @@ body {
 
 /* Navigation */
 nav {
-  position: fixed;
-  width: 100px;
-  height: 100vh;
-  background: var(--secondary);
-  z-index: 1000;
-  border-right: 1px solid var(--border-color);
+  width: 100%;
+  background-color: #333; /* Change to your preferred color */
+  padding: 10px 0;
 }
 
 .nav-content {
-  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between; /* Aligns logo to the left and nav-links to the right */
   align-items: center;
-  padding: 2rem 0;
+  max-width: 1200px; /* Adjust width */
+  margin: auto;
+  padding: 0 20px;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-bottom: 3rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
 }
 
 .nav-links {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   list-style: none;
+  display: flex;
+  gap: 20px; /* Adds space between links */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline-block;
 }
 
 .nav-links a {
-  color: var(--text-primary);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  font-size: 1.2rem;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+  color: #ffcc00; /* Change to your preferred hover color */
 }
+
 
 /* Main Content */
 main {
